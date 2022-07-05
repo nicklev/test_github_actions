@@ -4,6 +4,10 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
+      - name: Send data to OTLP backend
+        uses: codeboten/github-action-to-otlp@v1
+        with:
+          endpoint: "20.31.253.206:8200"
       - uses: codeboten/github-action-to-otlp@v1
         with:
           endpoint: 'grpc.otlpendpoint.io:443'
