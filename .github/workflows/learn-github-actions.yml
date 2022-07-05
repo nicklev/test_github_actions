@@ -8,7 +8,6 @@ jobs:
         uses: codeboten/github-action-to-otlp@v1
         with:
           endpoint: "20.31.253.206:8200"
-          headers: "Authorization=Bearer 1234sokin"
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
