@@ -8,9 +8,7 @@ jobs:
         uses: codeboten/github-action-to-otlp@v1
         with:
           endpoint: "20.31.253.206:8200"
-      - uses: codeboten/github-action-to-otlp@v1
-        with:
-          endpoint: 'grpc.otlpendpoint.io:443'
+          headers: "Authorization=Bearer 1234sokin"
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
